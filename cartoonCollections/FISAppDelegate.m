@@ -17,13 +17,13 @@
 }
 
 -(NSString*)stringByRollCallingDwarfsInArray:(NSArray*)dwarfs {
-    NSString *dwarfRoll = @"";
+    NSMutableString *dwarfRoll = [[NSMutableString alloc] init];
     for (NSUInteger i = 0; i < [dwarfs count]; i++) {
         NSString *dwarfPlace = [NSString stringWithFormat: @"%lu. %@", i + 1, dwarfs[i]];
         if (i < [dwarfs count] - 1) {
             dwarfPlace = [dwarfPlace  stringByAppendingString: @" | " ];
         }
-        dwarfRoll = [dwarfRoll stringByAppendingString: dwarfPlace ];
+        [dwarfRoll appendString:dwarfPlace ];
     }
     return dwarfRoll;
 }
