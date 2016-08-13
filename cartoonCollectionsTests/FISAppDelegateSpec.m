@@ -131,12 +131,14 @@ describe(@"FISAppDelegate", ^{
                 scroogesMoneyBags = @[ @"$$$$$"      ,
                                        @"$"          ,
                                        @"$$"         ,
-                                       @"$$$$$$$$$$" ];
+                                       @"$$$$$$$$$$" ,
+                                       @""];
                 
                 scroogesPaperBills = @[ @"$5"  ,
                                         @"$1"  ,
                                         @"$2"  ,
-                                        @"$10" ];
+                                        @"$10" ,
+                                        @"$0"];
             });
             
             it(@"returns an NSArray object",^{
