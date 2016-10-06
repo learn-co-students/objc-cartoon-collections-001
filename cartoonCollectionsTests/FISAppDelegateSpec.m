@@ -29,7 +29,7 @@ describe(@"FISAppDelegate", ^{
                                           @"Sneezy"  ,
                                           @"Dopey"   ];
                 
-                expectedRollCall = @"1. Doc | 2. Grumpy | 3. Happy | 4. Sleepy | 5. Bashful | 6. Sneezy | 7. Dopey";
+                    expectedRollCall = @"1. Doc | 2. Grumpy | 3. Happy | 4. Sleepy | 5. Bashful | 6. Sneezy | 7. Dopey";
             });
 
             it(@"returns an NSString object",^{
